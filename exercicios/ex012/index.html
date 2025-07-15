@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens e audios</title>
+</head>
+<body>
+    
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender reproduzir audio em HTML5</p>
+    <audio src="Principedapaz.mp4" controls autoplay></audio>
+    
+    <audio preload="metadata" autoplay controls loop> 
+        <source src="Principedapaz.mp4" type="audio/mp4">
+    </audio>
+
+
+    
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir o site em varios dispositivos ou aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 1000px)"     srcset="3.webp" type="image/webp">
+        <img src="2.webp" alt="imagem flexivel">
+    </picture>
+
+   
+
+</body>
+</html>
