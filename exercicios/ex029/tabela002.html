@@ -12,11 +12,27 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.3em;
+            padding: 6px;
         }
 
         td, th{
             border: 1px solid black ;
             padding: 3px;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: rgba(0, 0, 0, 0.116);
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: antiquewhite;
         }
 
         thead, tfoot{
@@ -29,6 +45,7 @@
     <!--
     Anatomia tabelas grandes
     Table 
+        caption
         thead
             tr,td,th
         tbody
@@ -38,6 +55,7 @@
     -->
 
     <table>
+        <caption><strong>População das Unidades Federativas</strong></caption>
         <thead>
             <th>Estado</th>
             <th>Populaçao</th>
